@@ -2,6 +2,10 @@
 
 A simple mobile task management application with time tracking.
 
+## Screenshots
+
+<img src="assets/home.png" alt="App Screenshot1" width="200"> <img src="assets/home1.png" alt="App Screenshot1" width="200"> <img src="assets/done_tasks.png" alt="App Screenshot1" width="200"> <img src="assets/duration_setting.png" alt="App Screenshot1" width="200"> <img src="assets/update.delete.png" alt="App Screenshot1" width="200"> 
+
 ## Features
 
 - Create, edit, and delete tasks
@@ -44,10 +48,10 @@ flutter run
 
 ## Design Decisions
 
-- **State Management**: StatefulWidget for simplicity
-- **Storage**: SharedPreferences for lightweight persistence
+- **State Management**: StatefulWidget for simplicity (appropriate for small app scope with localized state; avoids overhead of Provider/Bloc/Riverpod while maintaining readability and meeting the app's requirements)
+- **Storage**: SharedPreferences for lightweight local saving on device 
+  (stores tasks as JSON, loads on app start, auto-saves on modifications)
 - **UI**: Material Design 3 with indigo accent
-- **Validation**: Title (required, max 100 chars), Description (optional, max 500 chars)
 
 ## Testing
 ```bash
