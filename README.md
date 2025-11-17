@@ -1,16 +1,67 @@
-# task_manager
+# Task Manager - Flutter App
 
-A new Flutter project.
+A simple mobile task management application with time tracking.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Create, edit, and delete tasks
+- Track time spent when completing tasks
+- Material Design 3 UI
+- Persistent local storage
+- Filter by status (All/Active/Completed)
+- Responsive design
 
-A few resources to get you started if this is your first Flutter project:
+## Setup
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Prerequisites
+- Flutter SDK 3.0.0+
+- Dart SDK
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Installation
+
+1. Clone repository:
+```bash
+git clone https://github.com/GChukwudi/Task-Manager.git
+cd task_manager
+```
+
+2. Install dependencies:
+```bash
+flutter pub get
+```
+
+3. Run:
+```bash
+flutter run
+```
+
+## Architecture
+
+- **Models**: Task data structure
+- **Screens**: Main UI screen
+- **Widgets**: Reusable components
+- **Utils**: Storage service
+
+## Design Decisions
+
+- **State Management**: StatefulWidget for simplicity
+- **Storage**: SharedPreferences for lightweight persistence
+- **UI**: Material Design 3 with indigo accent
+- **Validation**: Title (required, max 100 chars), Description (optional, max 500 chars)
+
+## Testing
+```bash
+flutter test
+```
+
+## Time Spent
+
+- Planning: 30 min
+- Development: 3 hours
+- Testing: 45 min
+- Documentation: 30 min
+- **Total: ~5 hours**
+
+## License
+
+Skill's evaluation purposes
