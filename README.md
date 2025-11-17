@@ -22,7 +22,7 @@ A simple mobile task management application with time tracking.
 1. Clone repository:
 ```bash
 git clone https://github.com/GChukwudi/Task-Manager.git
-cd task_manager
+cd Task-Manager
 ```
 
 2. Install dependencies:
